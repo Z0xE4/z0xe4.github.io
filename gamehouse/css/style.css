@@ -1,3 +1,24 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -227,6 +248,7 @@ header {
 }
 
 .vk {
+  opacity: 0%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #424242 0px 0px 0px 3px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #424242 0px 0px 0px 3px;
   border-radius: 3px;
@@ -236,6 +258,10 @@ header {
   top: 87px;
   height: 425px;
   margin-left: 20px;
+}
+
+.vk.active {
+  opacity: 100%;
 }
 
 .main {
