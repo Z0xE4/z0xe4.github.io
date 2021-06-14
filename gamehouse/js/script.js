@@ -33,7 +33,7 @@ var interval3 = setInterval(function() {
 
 new WOW().init();
 
-if (screen.width > 1366) {
+if ($('body').width() > 1366) {
     $(document).ready(function(){
         VK.Widgets.Group("vk_groups", {mode: 4, width: "325", height: "425", color1: '2D2F32', color2: 'FFFFFF', color3: 'FFE279'}, 205134472);
         let vk = document.getElementsByClassName('vk')[0].classList;
