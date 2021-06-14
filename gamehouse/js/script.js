@@ -33,13 +33,8 @@ var interval3 = setInterval(function() {
 
 new WOW().init();
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-
-    
-
-} else {
+if (screen.width > 1366) {
     $(document).ready(function(){
-        $.getScript('https://vk.com/js/api/openapi.js?169');
         VK.Widgets.Group("vk_groups", {mode: 4, width: "325", height: "425", color1: '2D2F32', color2: 'FFFFFF', color3: 'FFE279'}, 205134472);
         let vk = document.getElementsByClassName('vk')[0].classList;
         vk.add('active');
