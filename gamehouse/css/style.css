@@ -509,3 +509,180 @@ footer .footer__last__nav a:last-child {
     font-size: 28px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  table {
+    font-size: 16px;
+  }
+
+  .header {
+    max-width: 95%;
+  }
+
+  .header__logo {
+    font-size: 20px;
+  }
+
+  .header__auth {
+    display: none;
+  }
+
+  .stats {
+    display: none;
+  }
+
+  .main {
+    margin-top: 62px;
+  }
+
+  .main .bg {
+    display: none;
+  }
+
+  .more-duels {
+    width: 300px;
+    display: none;
+  }
+
+  .more-duels.mobile {
+    display: block;
+  }
+
+  .duel1 {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .duel1__title p {
+    font-size: 24px;
+  }
+
+  .duel1__table table img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .duel2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 0;
+  }
+
+  .duel2__item {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .duel2__item__title {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  footer .footer__pay-methods {
+    display: none;
+  }
+
+  footer .footer__last p {
+    font-size: 14px;
+    margin: auto;
+  }
+
+  footer .footer__last__nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  footer .footer__title p {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  footer .footer__title p {
+    font-size: 35px;
+  }
+
+  footer .footer__title button {
+    font-size: 16px;
+    padding: 6px 6px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  table {
+    font-size: 14px;
+  }
+
+  table tr th:first-child p {
+    margin-left: 5px;
+  }
+
+  table tr th:last-child p {
+    margin-right: 5px;
+  }
+
+  table tr td:first-child {
+    margin-left: 5px;
+  }
+
+  table tr td:last-child img {
+    margin-right: 5px;
+  }
+
+  .more-duels {
+    width: 200px;
+  }
+
+  .more-duels a {
+    padding: 8px 0;
+  }
+
+  .duel1 {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .duel1__title p {
+    font-size: 22px;
+  }
+
+  .duel1__table table img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .duel2__item {
+    height: 300px;
+  }
+
+  .duel2__item__title {
+    font-size: 22px;
+  }
+
+  .duel2__item__table table {
+    font-size: 14px;
+  }
+
+  .duel2__item__table table img {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer .footer__title p {
+    font-size: 30px;
+  }
+
+  footer .footer__last p {
+    font-size: 12px;
+  }
+}
