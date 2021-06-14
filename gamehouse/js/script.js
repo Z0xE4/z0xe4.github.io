@@ -33,17 +33,10 @@ var interval3 = setInterval(function() {
 
 new WOW().init();
 
-setTimeout(function(){
-    // создаем элемент script и добавляем его асинхронно в DOM
-    var VKO = document.createElement("script");
-    VKO.src = 'https://vk.com/js/api/openapi.js';
-    VKO.async = true;
-    document.getElementsByTagName('head')[0].appendChild(VKO);
-
+$(document).ready(function(){
     VK.Widgets.Group("vk_groups", {mode: 4, width: "325", height: "425", color1: '2D2F32', color2: 'FFFFFF', color3: 'FFE279'}, 205134472);
-
     let vk = document.getElementsByClassName('vk')[0].classList;
-    vk.add('active')
+    vk.add('active');
     vk.add('animate__animated');
     vk.add('animate__fadeInRight');
-}, 100);
+});
